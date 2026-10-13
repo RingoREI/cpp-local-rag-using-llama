@@ -66,3 +66,15 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+# Model weights
+models/
+*.gguf
+
+# Generated databases
+*.db
+
+# Build artifacts
+build/
+cmake-build-*/
+# Local editor settings
+.vscode/

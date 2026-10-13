@@ -1,0 +1,15 @@
+{
+  "models": {
+    "embedding":   "./models/bge-small-zh-v1.5-f16.gguf",
+    "generation":  "./models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "n_gpu_layers": 99
+  },
+  "document":  { "chunk_size": 500, "overlap_size": 50 },
+  "retrieval": { "top_k": 3 },
+  "generation": {
+    "n_ctx": 4096, "n_batch": 4096, "n_ubatch": 512,
+    "max_output_tokens": 512,
+    "temperature": 0.7, "top_k": 40, "top_p": 0.9
+  },
+  "embedding": { "n_ctx": 512, "n_batch": 512, "n_ubatch": 512 }
+}
